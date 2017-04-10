@@ -1,0 +1,29 @@
+{
+  "name": "rejection-tracker",
+  "description": "Print stack and exit with non null return code on unhandled rejection",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "version": "0.1.0",
+  "scripts": {
+    "tsc": "./node_modules/.bin/tsc -p ./tsconfig.json",
+    "test": "node ./dist/test/main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garronej/rejection-tracker.git"
+  },
+  "author": "Joseph Garrone",
+  "license": "MIT",
+  "keywords": [
+    "typeScript",
+    "unhandledRejection"
+  ],
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/colors": "^1.1.2",
+    "@types/node": "^4.0.0",
+    "typescript": "^2.2.1"
+  }
+}
