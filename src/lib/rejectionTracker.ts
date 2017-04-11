@@ -5,6 +5,8 @@ export function rejectionTracker(...projectPaths: string[]): void {
 
     let projectPath= path.join.apply(path, projectPaths);
 
+    console.log("add rejection handler", projectPath);
+
     process.on("unhandledRejection", error => {
 
 

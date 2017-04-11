@@ -8,6 +8,7 @@ function rejectionTracker() {
         projectPaths[_i] = arguments[_i];
     }
     var projectPath = path.join.apply(path, projectPaths);
+    console.log("add rejection handler", projectPath);
     process.on("unhandledRejection", function (error) {
         if (!(error instanceof Error) || !error.stack)
             return;
