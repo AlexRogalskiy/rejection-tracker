@@ -29,7 +29,7 @@ function rejectionTracker() {
         */
         if (relativePath.match(/^(?:\.\.|node_modules)/))
             return;
-        console.log(("Unhandled Rejection error in module " + projectPath.split(path.sep).pop()).red);
+        console.log((projectPath.split(path.sep).pop() + " internal error").red);
         console.log(error.stack);
         process.exit(-1);
     });
