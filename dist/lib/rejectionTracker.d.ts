@@ -1,2 +1,2 @@
 import "colors";
-export declare function rejectionTracker(...projectPaths: string[]): void;
+export declare function rejectionTracker(modulePaths: string[], isMain: boolean): void;

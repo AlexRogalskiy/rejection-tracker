@@ -3,10 +3,9 @@
   "description": "Print stack and exit with non null return code on unhandled rejection",
   "main": "./dist/lib/index.js",
   "types": "./dist/lib/index.d.ts",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "scripts": {
-    "tsc": "./node_modules/.bin/tsc -p ./tsconfig.json",
-    "test": "node ./dist/test/main"
+    "tsc": "./node_modules/.bin/tsc -p ./tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -19,11 +18,13 @@
     "unhandledRejection"
   ],
   "dependencies": {
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "stack-trace": "0.0.9"
   },
   "devDependencies": {
     "@types/colors": "^1.1.2",
     "@types/node": "^4.0.0",
+    "@types/stack-trace": "0.0.28",
     "typescript": "^2.2.1"
   }
 }
