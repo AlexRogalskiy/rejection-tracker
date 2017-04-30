@@ -66,7 +66,7 @@ export function rejectionTracker(modulePaths: string[], isMain: boolean): void {
 
             let currentFileName = stackFrame.getFileName();
 
-            if (path.isAbsolute(currentFileName)) {
+            if (currentFileName && path.isAbsolute(currentFileName)) {
 
                 fileName = currentFileName;
 

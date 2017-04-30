@@ -38,7 +38,7 @@ function rejectionTracker(modulePaths, isMain) {
         for (var _i = 0, _a = stackTrace.parse(error); _i < _a.length; _i++) {
             var stackFrame = _a[_i];
             var currentFileName = stackFrame.getFileName();
-            if (path.isAbsolute(currentFileName)) {
+            if (currentFileName && path.isAbsolute(currentFileName)) {
                 fileName = currentFileName;
                 break;
             }

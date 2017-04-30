@@ -3,7 +3,7 @@
   "description": "Print stack and exit with non null return code on unhandled rejection",
   "main": "./dist/lib/index.js",
   "types": "./dist/lib/index.d.ts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "tsc": "./node_modules/.bin/tsc -p ./tsconfig.json"
   },
